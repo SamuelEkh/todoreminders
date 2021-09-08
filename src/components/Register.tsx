@@ -30,7 +30,7 @@ const Register: React.FC = () => {
       setLoading(true);
       await signup(email, password);
       setLoading(false);
-      history.push('/');
+      history.push('/todoreminders');
     } catch {
       setError('Failed to create an account');
     }
@@ -62,7 +62,7 @@ const Register: React.FC = () => {
       </form>
       <div className="login__register">
         Already have an account?
-        <Link style={linkStyle} to="/">Log in here!</Link>
+        <Link style={linkStyle} to="/todoreminders">Log in here!</Link>
       </div>
     </section>
   );
