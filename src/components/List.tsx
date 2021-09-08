@@ -104,7 +104,7 @@ const List: React.FC<IProps> = ({ socket }) => {
         if (response.status !== 200) throw new Error();
 
         setLoading(false);
-        history.push('/');
+        history.push('/todoreminders');
         socket.emit('list-update');
       } catch {
         setLoading(false);
@@ -206,7 +206,7 @@ const List: React.FC<IProps> = ({ socket }) => {
       fetchList();
     });
     socket.on('delete-list', () => {
-      history.push('/');
+      history.push('/todoreminders');
     });
 
     return () => socket.removeAllListeners();
