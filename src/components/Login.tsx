@@ -53,7 +53,7 @@ const Login: React.FC = () => {
       </form>
       <div className="login__register">
         Not a member?
-        <Link style={linkStyle} to="/register">Sign up here!</Link>
+        <Link style={linkStyle} to="/todoreminders/register">Sign up here!</Link>
       </div>
     </section>
   );
