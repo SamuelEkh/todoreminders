@@ -1,0 +1,98 @@
+.create-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4a4a4a;
+}
+
+.subtask-form {
+  position: relative;
+}
+
+.subtask-form__add {
+  position: absolute;
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  top: 0.7rem;
+  background-color: transparent;
+  border: 0;
+}
+
+.create-task__main-task, .subtask-form__input, .create-task__price {
+  background-color: transparent;
+  height: 2rem;
+  width: 12rem;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.create-task__error {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 1.8rem;
+  color: red;
+}
+
+.create-task__title {
+  margin: 0.2rem 0 1rem 0;
+}
+
+.new-subtask {
+  position: relative;
+  width: 100%;
+  margin: 0 0 0.3rem 0;
+  word-wrap: break-word;
+}
+
+.new-subtask__text {
+  word-wrap: break-word;
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.new-subtask__remove {
+  position: absolute;
+  background-color: transparent;
+  color: red;
+  right: 5px;
+  top: 3px;
+  border: 0;
+  z-index: 1;
+}
+
+.create-task__submit {
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  color: #4a4a4a;
+  border-radius: 8px;
+  border: 0;
+  width: 5rem;
+  height: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.create-task__submit:hover {
+  background: linear-gradient(0.12turn, #4d88e8, #6ea5ff, #abcbff);
+  color: white;
+  cursor: pointer;
+}
+
+.create-task__deadline-input {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 9rem;
+}
+
+@media screen and (min-width: 750px) {
+  .create-task__title {
+    font-size: 1.2rem;
+  }
+  .new-subtask__remove {
+    right: 2rem;
+  }
+}

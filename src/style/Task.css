@@ -1,0 +1,180 @@
+.edit {
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  border-radius: 8px;
+  position: relative;
+  width: 13rem;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.edit__maintask {
+  font-size: 1rem;
+  margin: 0 0 0.7rem 0.5rem;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #757575;
+  color: #4a4a4a;
+  width: 8rem;
+}
+
+.edit__subtask {
+  background-color: transparent;
+  outline: none;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+  border: 0;
+  border-bottom: 1px solid #757575;
+  color: #4a4a4a;
+}
+
+.edit__new-subtask, .edit__price {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #757575;
+  width: 10rem;
+  margin: 0 0 0.8rem 0.5rem;
+}
+
+.edit__price {
+  margin-bottom: 0.5rem;
+}
+
+.edit__deadline {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-left: 0.5rem;
+}
+
+.edit__new-subtask--btn {
+  background-color: transparent;
+  color: #333333;
+  position: absolute;
+  border: 0;
+  font-size: 1.2rem;
+  margin-top: 2px;
+  margin-left: 0.35rem;
+}
+
+.edit__subtask-remove {
+  background-color: transparent;
+  border: 0;
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+.edit__subtask-remove:hover {
+  cursor: pointer;
+}
+
+.edit__subtask-container {
+  position: relative;
+}
+
+.task__maintask {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 0.3rem;
+  padding-left: 0.5rem;
+  word-wrap: break-word;
+  padding-right: 4rem;
+}
+
+.task__maintask:hover {
+  cursor: pointer;
+}
+
+.subtask-container {
+  font-size: 0.8rem;
+  margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.subtask {
+  position: relative;
+  box-shadow: 0 0 5px #d6d6d6;
+  color: #4a4a4a;
+  /* box-shadow: 0 0 5px #bdbdbd; */
+  border-radius: 8px;
+  margin-bottom: 0.2rem;
+  padding: 0 1.2rem 0 1.2rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.subtask:hover {
+  cursor: pointer;
+}
+
+.task__maintask-edit {
+  position: absolute;
+  background: linear-gradient(0.12turn, #4d88e8, #6ea5ff, #abcbff);
+  /* background-color: transparent;
+  border: 1px solid black; */
+  border: 0;
+  color: white;
+  border-radius: 8px;
+  top: 5px;
+  right: 5px;
+}
+
+.task__maintask-edit--delete {
+  background: linear-gradient(0.12turn, #a31107, #c42116, #d1342a);
+}
+
+.task__maintask-edit:hover {
+  /* background: linear-gradient(0.12turn, #4d88e8, #6ea5ff, #abcbff); */
+  color: white;
+  cursor: pointer;
+  /* border: 1px solid #6e6e6e; */
+}
+
+.list__completed {
+  position: absolute;
+  color: green;
+  height: 0.5rem;
+  width: 1rem;
+  top: 8px;
+  left: 47%;
+  transform: translate(-50%, 0);
+  border-bottom: 2px solid green;
+  border-left: 2px solid green;
+  transform: rotateY(0deg) rotate(-45deg);
+}
+
+.subtask__completed {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  height: 5px;
+  width: 8px;
+  border-bottom: 2px solid green;
+  border-left: 2px solid green;
+  transform: rotateY(0deg) rotate(-45deg);
+}
+
+.task__deadline, .task__price {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.task__price {
+  font-size: 0.8rem;
+}
+
+.task__error {
+  font-size: 0.8rem;
+  color: red;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .task {
+    align-self: center;
+  }
+}

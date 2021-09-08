@@ -1,0 +1,32 @@
+.popup {
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  border-radius: 8px;
+  border: 1px solid gray;
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  top: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.popup-inner {
+  position: relative;
+}
+
+.popup-inner__close {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: red;
+  right: 8px;
+  top: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  .popup {
+    width: 20rem;
+  }
+}

@@ -1,0 +1,198 @@
+.create-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4a4a4a;
+}
+
+.create-list__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.create-list__required {
+  position: absolute;
+  font-size: 0.9rem;
+  top: 0.7rem;
+  left: 0.5rem;
+  color: red;
+}
+
+.create-list__header {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.create-list__subheader {
+  margin: 0 0 2rem 0;
+  font-size: 0.8rem;
+}
+
+.create-list__error {
+  position: absolute;
+  color: red;
+  top: -1.5rem;
+}
+
+.create-list__title, .create-list__collaborators-input {
+  background-color: transparent;
+  height: 2rem;
+  width: 12rem;
+  font-size: 1rem;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+.create-list__collaborators-input {
+  margin-left: 1.4rem;
+}
+
+.create-list__collaborators-container {
+  position: relative;
+  margin-top: 1rem;
+  width: 15rem;
+}
+
+.collaborator {
+  position: relative;
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  border-radius: 8px;
+  text-align: center;
+  padding: 3px 20px 3px 20px;
+  word-wrap: break-word;
+  margin-bottom: 0.4rem;
+}
+
+.collaborator__remove {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  color: red;
+  top: 0.25rem;
+  right: 0.1rem;
+}
+
+.create-list__collaborators-add {
+  position: absolute;
+  bottom: 0.55rem;
+  color: #4a4a4a;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.3rem;
+}
+
+.radio-buttons {
+  display: flex;
+}
+
+.radio-buttons__header {
+  text-align: center;
+}
+
+/* .radio-buttons__input {
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  border-radius: 8px;
+  padding: 3px 3px 3px 3px;
+  width: 10rem;
+  height: 4rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+} */
+
+.radio-buttons__title {
+  justify-content: center;
+  align-self: center;
+  margin-left: 0.7rem;
+}
+
+.create-list__submit, .radio-buttons__input {
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  color: #4a4a4a;
+  border-radius: 8px;
+  border: 0;
+  width: 5rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.radio-buttons__input {
+  margin: 0.5rem;
+}
+
+.create-list__submit:hover {
+  background: linear-gradient(0.12turn, #4d88e8, #6ea5ff, #abcbff);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  .create-list__header {
+    font-size: 2rem;
+  }
+  
+  .create-list__subheader {
+    font-size: 1.2rem;
+  }
+
+  .create-list__title, .create-list__collaborators-input {
+    height: 3rem;
+    width: 20rem;
+    font-size: 1.5rem;
+  }
+
+  .create-list__collaborators-input {
+    margin-left: 0;
+  }
+
+  .create-list__collaborators-add {
+    bottom: 0.55rem;
+    right: -2rem;
+    bottom: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  .create-list__required {
+    font-size: 1.3rem;
+    top: 1.1rem;
+    left: -1.4rem;
+    color: red;
+  }
+
+  .create-list__collaborators-container {
+    margin-top: 1rem;
+    width: 20rem;
+  }
+  
+  .collaborator {
+    padding: 3px 25px 3px 25px;
+  }
+
+  .radio-buttons__header {
+    font-size: 1.2rem;
+  }
+
+  .create-list__submit {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .radio-buttons__input {
+    font-size: 1rem;
+    height: 4rem;
+    width: 8rem;
+  }
+
+  .radio-buttons__input:hover {
+    cursor: pointer;
+  }
+  
+}

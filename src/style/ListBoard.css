@@ -1,0 +1,141 @@
+.lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  min-height: 7rem;
+  width: 95%;
+}
+
+.lists__error {
+  margin-top: 3rem;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 151px;
+  height: 94px;
+}
+
+.finished-container {
+  margin-top: 1rem;
+}
+
+.list-item {
+  position: relative;
+  color: #4a4a4a;
+  height: 5.2rem;
+  width: 151px;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  box-shadow: 0 0 5px #d6d6d6;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.list-item:hover {
+  background: linear-gradient(0.12turn, #4d88e8, #6ea5ff, #abcbff);
+  color: white;
+  cursor: pointer;
+}
+
+.list-item__title-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item__title {
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+}
+
+.list-item__tasks {
+  position: absolute;
+  font-size: 0.8rem;
+  top: -0.6rem;
+  right: 0.6rem;
+}
+
+.list-item__icon {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  bottom: 0.35rem;
+  left: 0.35rem;
+}
+
+.list-item__collaborative {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  top: 0.35rem;
+  left: 0.35rem;
+}
+
+.create-list__btn {
+  background-color: #fafafa;
+  color: #4a4a4a;
+  border: 0;
+  box-shadow: 0 0 5px #d6d6d6;
+  margin: 1.5rem 0 1rem 0;
+  border-radius: 8px;
+  height: 3rem;
+  width: 6rem;
+}
+
+.create-list__btn:hover {
+  background: linear-gradient(0.12turn, #4d88e8, #6ea5ff, #abcbff);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  .list-container {
+    width: 42rem;
+    height: 94px;
+  }
+  
+  .list-item {
+    height: 5.2rem;
+    width: 42rem;
+  }
+
+  .list-item__title {
+    font-size: 1.5rem;
+    top: 29%;
+  }
+
+  .create-list__btn {
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem 0;
+    height: 5rem;
+    width: 9rem;
+  }
+
+  .list-item__tasks {
+    top: 0rem;
+    font-size: 1.5rem;
+  }
+
+  .list-item__icon {
+    height: 2rem;
+    width: 2rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .list-item__collaborative {
+    height: 1.7rem;
+    width: 1.6rem;
+    top: 0.3rem;
+    left: 0.7rem;
+  }
+}

@@ -1,0 +1,119 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4a4a4a;
+}
+
+.settings__title, .settings__collaborators-input {
+  background-color: transparent;
+  color: #4a4a4a;
+  height: 2rem;
+  width: 12rem;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #4a4a4a;
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.collaborator__settings {
+  position: relative;
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  border-radius: 8px;
+  text-align: center;
+  padding: 3px 20px 3px 20px;
+  word-wrap: break-word;
+  width: 10rem;
+  margin-bottom: 0.4rem;
+}
+
+.settings__collaborators-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.settings__collaborators-add {
+  position: absolute;
+  color: #4a4a4a;
+  bottom: 0.55rem;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.3rem;
+}
+
+.settings__checkbox {
+  position: relative;
+  height: 0.85rem;
+  width: 0.85rem;
+  margin-left: 0.5rem;
+  margin-top: 0.1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.settings__check {
+  position: absolute;
+  top: 0.09rem;
+  left: 0.09rem;
+  height: 0.45rem;
+  width: 0.45rem;
+  background-color: #4d88e8;
+  border: 1px solid #4d88e8;
+  border-radius: 50%;
+}
+
+.lock-container {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.settings__save, .settings__delete {
+  background-color: #fafafa;
+  box-shadow: 0 0 5px #d6d6d6;
+  border-radius: 8px;
+  border: 0;
+}
+
+.settings__save {
+  position: absolute;
+  background: linear-gradient(0.12turn, #4d88e8, #6ea5ff, #abcbff);
+  color: white;
+  right: 5px;
+  bottom: 5px;
+}
+
+.settings__delete {
+  position: absolute;
+  background: linear-gradient(0.12turn, #a31107, #c42116, #d1342a);
+  color: white;
+  left: 5px;
+  bottom: 5px;
+}
+
+.settings__save:hover, .settings__delete:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  .settings__check {
+    left: 0.1rem;
+  }
+  .settings__title {
+    margin-top: 1rem;
+  }
+  .settings__collaborators-add {
+    right: 2.3rem;
+  }
+}
