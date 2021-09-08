@@ -31,7 +31,7 @@ const FinishedBoard: React.FC<IProps> = ({ socket }) => {
 
   const myLists = () => lists.filter((list: IList) => list.completed)
     .map((list: IList) => (
-      <Link to={`/lists/${list._id}`} style={linkStyle} className="list-container finished-container" key={list._id}>
+      <Link to={`/todoreminders/lists/${list._id}`} style={linkStyle} className="list-container finished-container" key={list._id}>
         <BoardItem list={list} />
       </Link>
     ));

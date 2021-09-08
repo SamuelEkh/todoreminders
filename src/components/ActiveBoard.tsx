@@ -31,7 +31,7 @@ const ActiveBoard: React.FC<IProps> = ({ socket }) => {
 
   const myLists = () => lists.filter((list: IList) => !list.completed)
     .map((list: IList) => (
-      <Link to={`/lists/${list._id}`} style={linkStyle} className="list-container" key={list._id}>
+      <Link to={`/todoreminders/lists/${list._id}`} style={linkStyle} className="list-container" key={list._id}>
         <BoardItem list={list} />
       </Link>
     ));
@@ -46,7 +46,7 @@ const ActiveBoard: React.FC<IProps> = ({ socket }) => {
 
   return (
     <>
-      <Link to="/create-list" style={linkStyle}><button type="button" className="create-list__btn">Create List</button></Link>
+      <Link to="/todoreminders/create-list" style={linkStyle}><button type="button" className="create-list__btn">Create List</button></Link>
       <section className="lists">
         {myLists()}
         <div className="lists__error">{error}</div>

@@ -38,12 +38,12 @@ const App: React.FC = () => {
       <AuthProvider>
         <main className="main-content">
           <Header />
-          <Route exact path="/" render={() => (<Dashboard socket={socket} />)} />
-          <Route path="/lists/:id" render={() => (<List socket={socket} />)} />
-          <Route path="/register" component={Register} />
-          <Route path="/finished" render={() => (<FinishedBoard socket={socket} />)} />
-          <Route path="/account" component={Account} />
-          <Route path="/create-list" render={() => (<CreateList socket={socket} />)} />
+          <Route exact path="/todoreminders" render={() => (<Dashboard socket={socket} />)} />
+          <Route path="/todoreminders/lists/:id" render={() => (<List socket={socket} />)} />
+          <Route path="/todoreminders/register" component={Register} />
+          <Route path="/todoreminders/finished" render={() => (<FinishedBoard socket={socket} />)} />
+          <Route path="/todoreminders/account" component={Account} />
+          <Route path="/todoreminders/create-list" render={() => (<CreateList socket={socket} />)} />
         </main>
       </AuthProvider>
     </Router>

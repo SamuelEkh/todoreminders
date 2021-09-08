@@ -20,7 +20,7 @@ const Account: React.FC = () => {
       setLoading(false);
     }
 
-    history.push('/');
+    history.push('/todoreminders');
   };
 
   return currentUser ? (

@@ -62,7 +62,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <Link to="/" style={linkStyle} className="header__logo" onClick={handleClick}>
+      <Link to="/todoreminders" style={linkStyle} className="header__logo" onClick={handleClick}>
         <h1>
           R
         </h1>
@@ -70,17 +70,17 @@ const Header: React.FC = () => {
       {currentUser
         ? (
           <>
-            <Link to="/" style={activeStyle} onClick={handleClick}>
+            <Link to="/todoreminders" style={activeStyle} onClick={handleClick}>
               <h2 className="header__active">
                 Active
               </h2>
             </Link>
-            <Link to="/finished" style={finishedStyle} onClick={handleClick}>
+            <Link to="/todoreminders/finished" style={finishedStyle} onClick={handleClick}>
               <h2 className="header__finished">
                 Finished
               </h2>
             </Link>
-            <Link to="/account" style={linkStyle}>
+            <Link to="/todoreminders/account" style={linkStyle}>
               <img className="header__account" src={accountIcon} alt="account-icon" />
             </Link>
           </>

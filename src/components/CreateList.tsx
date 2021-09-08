@@ -54,7 +54,7 @@ const CreateList: React.FC<IProps> = ({ socket }) => {
       setTitle('');
       setLoading(false);
       socket.emit('board-update');
-      history.push(`/lists/${returnedValue._id}`);
+      history.push(`/todoreminders/lists/${returnedValue._id}`);
     } catch {
       setLoading(false);
       return setError('Failed to create list');
