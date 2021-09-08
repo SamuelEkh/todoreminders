@@ -25,7 +25,7 @@ const App: React.FC = () => {
   const [socket, setSocket] = useState<Socket>(io);
 
   useEffect(() => {
-    const iosocket = io(`${process.env.REACT_APP_SERVER}/`);
+    const iosocket = io(`${process.env.REACT_APP_SERVER}`);
     setSocket(iosocket);
 
     return () => {
