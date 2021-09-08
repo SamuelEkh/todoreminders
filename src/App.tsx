@@ -25,7 +25,14 @@ const App: React.FC = () => {
   const [socket, setSocket] = useState<Socket>(io);
 
   useEffect(() => {
-    const iosocket = io(`${process.env.REACT_APP_SERVER}`);
+    const iosocket = io(`${process.env.REACT_APP_SERVER}`, {
+      reconnectionDelay: 1000,
+      reconnection: true,
+      transports: ['websocket'],
+      agent: false,
+      upgrade: false,
+      rejectUnauthorized: false,
+    });
     setSocket(iosocket);
 
     return () => {
